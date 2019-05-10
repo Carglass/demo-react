@@ -1,10 +1,10 @@
 import React from "react";
-import Selector from "./components/Selector";
+import ColorShower from "./components/ColorShower";
 
 function App() {
   return (
     <div className="App">
-      <Selector onChangeHandler={() => true} color="blue" isChecked={true} />
+      <ColorShower onChangeHandler={() => true} color="blue" isVisible={false} />
     </div>
   );
 }
