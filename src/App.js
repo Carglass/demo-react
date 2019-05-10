@@ -1,11 +1,20 @@
 import React from "react";
-import ColorShower from "./components/ColorShower";
+import ColorShowerContainer from "./components/ColorShowerContainer";
+import { createStore } from "redux";
+import { Provider } from "react-redux";
+import demo from "./reducers";
+
+const store = createStore(demo);
 
 function App() {
   return (
-    <div className="App">
-      <ColorShower onChangeHandler={() => true} color="blue" isVisible={false} />
-    </div>
+    <Provider store={store}>
+      <div className="App">
+        <ColorShowerContainer color="blue" />
+        <ColorShowerContainer color="green" />
+        <ColorShowerContainer color="red" />
+      </div>
+    </Provider>
   );
 }
 

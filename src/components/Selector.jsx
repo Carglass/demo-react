@@ -6,6 +6,7 @@ function Selector(props) {
       {props.color}
       <input
         type="checkbox"
+        id={props.color}
         checked={props.isChecked}
         onChange={props.onChangeHandler}
       />

@@ -3,3 +3,15 @@
   height: 200px;
   background-color: blue;
 }
+
+.color-square-green {
+  width: 33%;
+  height: 200px;
+  background-color: green;
+}
+
+.color-square-red {
+  width: 33%;
+  height: 200px;
+  background-color: red;
+}

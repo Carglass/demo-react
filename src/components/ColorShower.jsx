@@ -7,7 +7,9 @@ function ColorShower(props) {
     <div>
       <Selector
         color={props.color}
-        onChangeHandler={props.onChangeHandler}
+        onChangeHandler={() => {
+          props.onChangeHandler(props.color);
+        }}
         isChecked={props.isVisible}
       />
       <ColorSquare color={props.color} isVisible={props.isVisible} />
